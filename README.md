@@ -4,7 +4,7 @@ A modern financial dashboard built with Next.js 14, Tailwind CSS, and Chart.js.
 
 ## 📸 Dashboard Preview
 
-![Wealth Elite Dashboard](/financial-dashboard/public/dashboard_screenshot.png)
+![Wealth Elite Dashboard](/public/dashboard_screenshot.png)
 
 *Wealth Elite - Investment Made Easier - A comprehensive financial dashboard with KPI cards, transaction metrics, client statistics, and interactive charts.*
 
