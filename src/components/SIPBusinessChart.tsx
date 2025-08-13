@@ -161,7 +161,7 @@ export default function SIPBusinessChart({ data }: SIPBusinessChartProps) {
       </div>
       
       <div className="h-72">
-        <Chart type="bar" data={chartData}/>
+        <Chart type="bar" data={chartData} options={options}/>
       </div>
     </div>
   );
