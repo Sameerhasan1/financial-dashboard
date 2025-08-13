@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wealth Elite Financial Dashboard
 
-## Getting Started
+A modern financial dashboard built with Next.js 14, Tailwind CSS, and Chart.js.
 
-First, run the development server:
+## 📸 Dashboard Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Wealth Elite Dashboard](/financial-dashboard/public/dashboard_screenshot.png)
+
+*Wealth Elite - Investment Made Easier - A comprehensive financial dashboard with KPI cards, transaction metrics, client statistics, and interactive charts.*
+
+## Features
+
+- 📊 Real-time financial metrics (AUM, SIP)
+- 📈 Interactive charts and visualizations
+- 🎯 Transaction summary with time filters
+- 👥 Client statistics bubble chart
+- 📱 Responsive design for all devices
+- 🚀 Fast performance with Next.js 14
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS v4
+- **Charts**: Chart.js + react-chartjs-2
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+## Quick Start
+
+1. **Clone and navigate to project**
+   ```bash
+   cd financial-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+financial-dashboard/
+├── src/
+│   ├── app/
+│   │   ├── api/dashboard/route.ts
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
+│       ├── Dashboard.tsx
+│       ├── Header.tsx
+│       ├── Navigation.tsx
+│       ├── KPICards.tsx
+│       ├── TransactionSummary.tsx
+│       ├── ClientsSection.tsx
+│       ├── SIPBusinessChart.tsx
+│       └── MonthlyMISChart.tsx
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API Endpoints
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `GET /api/dashboard` - Returns mock dashboard data
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+- Modify `src/app/api/dashboard/route.ts` to change data
+- Update colors in `src/app/globals.css`
+- Adjust chart options in chart components
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Build and deploy to your preferred platform:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm run start
+```
 
-## Deploy on Vercel
+## Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For issues or questions, check the project structure or modify the mock API data as needed.
